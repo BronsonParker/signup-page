@@ -10,8 +10,8 @@ body {
   margin: 0 24px;
 }
 
-/* Custom required style changes, like colors. */
 
+/* Custom required style changes, like colors. */
 body{
     background-color : midnightblue;
 }
@@ -39,5 +39,17 @@ p {
     font-size: 22px;
     color: darkturquoise;
 }
+
+
+/* Adding required Box stuff */
+.box {
+  margin: 40px 0;
+  border: 3px dashed darkgreen;
+  padding: 60px;
+  background-color: lightslategray
+}
+
+
+
 
 
