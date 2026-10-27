@@ -1,1 +1,43 @@
 !DOCTYPE css
+
+/* Starting with the required additions, including smooth scrolling. */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 24px;
+}
+
+/* Custom required style changes, like colors. */
+
+body{
+    background-color : midnightblue;
+}
+
+h1 {
+    /* Yes, I went with the same color gradient that I used on one of my Crab pages. It started out accidental, but when it came out so similar I just copied the colors.
+    I know not every browser uses webkit for stuff, but this was the way I found to do it when I looked it up before so it's just what I'm used to doing right now. */
+    font-size: 68px;
+    font-family: fantasy;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #563f06, #c68306, #ffd706);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: darkgoldenrod;
+    /* Fallback for browsers that are lame and they don't support text clipping. */
+}
+
+h2 {
+    font-size: 32px;
+    font-family: sans-serif;
+    color: darkorange;
+}
+
+p {
+    font-size: 22px;
+    color: darkturquoise;
+}
+
+
