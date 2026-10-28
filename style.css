@@ -1,4 +1,8 @@
-!DOCTYPE css
+/* tells all elements to make their borders the same, regardless of default sizes. */
+* {
+    box-sizing: border-box;
+}
+
 
 /* Starting with the required additions, including smooth scrolling. */
 html {
@@ -37,6 +41,7 @@ h2 {
 
 p {
     font-size: 22px;
+    font-family: serif;
     color: darkturquoise;
 }
 
@@ -50,6 +55,37 @@ p {
 }
 
 
+/* Styles for Forms */
+label {
+    display: block;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
+input, select, textarea {
+    width: 100%;
+    max-width: 30rem;
+    padding: 12px;
+}
 
+button {
+    display: block;
+    margin-top: 12px;
+    padding: 8px;
+    background-color: darkred;
+    color: gold;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid goldenrod;
+    outline-offset: 2px;
+}
+
+input:user-invalid {
+    border: 2px solid crimson;
+}
 
