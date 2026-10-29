@@ -39,6 +39,11 @@ h2 {
     color: darkorange;
 }
 
+h3 {
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
 p {
     font-size: 22px;
     font-family: serif;
@@ -88,4 +93,27 @@ textarea:focus {
 input:user-invalid {
     border: 2px solid crimson;
 }
+
+
+/* Flexin' on that Box */
+.cardBox {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 2 200px;
+    border: 2px solid goldenrod;
+    padding: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 30rem;
+}
+
+
 
