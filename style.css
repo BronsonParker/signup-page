@@ -104,6 +104,7 @@ input:user-invalid {
     flex: 1 2 200px;
     border: 2px solid goldenrod;
     padding: 16px;
+    align-content: center;
 }
 
 form {
