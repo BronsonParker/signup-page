@@ -3,6 +3,15 @@
     box-sizing: border-box;
 }
 
+/* Color variables for Dark/Light Themes */
+:root {
+    --page: midnightblue;
+    --text: darkturquoise;
+    --card: lightslategray;
+    --brand: goldenrod;
+    --feature: tomato;
+}
+
 
 /* Starting with the required additions, including smooth scrolling. */
 html {
@@ -14,10 +23,13 @@ body {
   margin: 0 24px;
 }
 
+a {
+    color: var(--page);
+}
 
 /* Custom required style changes, like colors. */
 body{
-    background-color : midnightblue;
+    background-color : var(--page);
 }
 
 h1 {
@@ -29,7 +41,7 @@ h1 {
     background-image: linear-gradient(to bottom, #563f06, #c68306, #ffd706);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: darkgoldenrod;
+    color: var(--brand);
     /* Fallback for browsers that are lame and they don't support text clipping. */
 }
 
@@ -42,20 +54,20 @@ h2 {
 h3 {
     font-size: 28px;
     font-family: sans-serif;
-    color: tomato;
+    color: var(--feature);
 }
 
 p {
     font-size: 22px;
     font-family: serif;
-    color: darkturquoise;
+    color: var(--text);
 }
 
 nav {
     top: 0;
     position: sticky;
     display: flex;
-    background-color: gold;
+    background-color: var(--brand);
     gap: 16px;
     padding: 4px;
     justify-content: center;
@@ -94,7 +106,7 @@ button {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 3px solid goldenrod;
+    outline: 4px solid var(--brand);
     outline-offset: 2px;
 }
 
@@ -112,7 +124,7 @@ input:user-invalid {
 
 .card {
     flex: 1 2 200px;
-    border: 2px solid goldenrod;
+    border: 2px solid var(--brand);
     padding: 16px;
     align-content: center;
 }
@@ -134,14 +146,14 @@ form {
 You can't really tell that it's translucent though because of the contrasting colors, but it is! Too light and it kinda looks like muddy water, but I kinda dig the peanut butter color it came out to now. */
 .hero {
     background-color: rgba(184, 134, 11, .80);
-    color: tomato;
+    color: var(--feature);
     text-align: center;
     padding: 64px 24px
 }
 
 .cta {
     display: inline-block;
-    background-color: tomato;
+    background-color: var(--feature);
     color: black;
     padding: 12px 24px;
     border-radius: 12px;
@@ -150,16 +162,20 @@ You can't really tell that it's translucent though because of the contrasting co
 }
 
 @media (min-width: 700px) {
-    .hero hs {
+    .hero h2 {
         font-size: 3rem;
     }
 }
 
-/* :root { */
-    /* --brand: gold; */
-/* } */
+footer {
+    color: var(--card);
+}
 
-/* h1 { */
-    /* color: var( --brand) */
-/* } */
 
+body.dark {
+    --page: black;
+    --text: midnightblue;
+    --card: darkslategray;
+    --brand: darkgoldenrod;
+    --feature: orangered;
+}
