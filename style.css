@@ -42,6 +42,7 @@ h2 {
 h3 {
     font-size: 28px;
     font-family: sans-serif;
+    color: tomato;
 }
 
 p {
@@ -63,7 +64,7 @@ nav {
 /* Adding required Box stuff */
 .box {
   margin: 40px 0;
-  border: 3px dashed darkgreen;
+  border: 3px dashed darkred;
   padding: 60px;
   background-color: lightslategray
 }
@@ -129,8 +130,10 @@ form {
     gap: 4px;
 }
 
+/* I understand that fourth value in RGBA is Alpha, or opacity, and is a decimal scale from 0-1, essential a percentile scale.
+You can't really tell that it's translucent though because of the contrasting colors, but it is! Too light and it kinda looks like muddy water, but I kinda dig the peanut butter color it came out to now. */
 .hero {
-    background-color: darkgoldenrod;
+    background-color: rgba(184, 134, 11, .80);
     color: tomato;
     text-align: center;
     padding: 64px 24px
