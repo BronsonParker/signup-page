@@ -50,6 +50,15 @@ p {
     color: darkturquoise;
 }
 
+nav {
+    top: 0;
+    position: sticky;
+    display: flex;
+    background-color: gold;
+    gap: 16px;
+    padding: 4px;
+    justify-content: center;
+}
 
 /* Adding required Box stuff */
 .box {
@@ -120,4 +129,34 @@ form {
     gap: 4px;
 }
 
+.hero {
+    background-color: darkgoldenrod;
+    color: tomato;
+    text-align: center;
+    padding: 64px 24px
+}
+
+.cta {
+    display: inline-block;
+    background-color: tomato;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (min-width: 700px) {
+    .hero hs {
+        font-size: 3rem;
+    }
+}
+
+/* :root { */
+    /* --brand: gold; */
+/* } */
+
+/* h1 { */
+    /* color: var( --brand) */
+/* } */
 
